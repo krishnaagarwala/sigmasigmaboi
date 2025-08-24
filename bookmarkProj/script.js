@@ -1,1 +1,1 @@
-alert("hello, world!");
+alert("Welcome to my bookmark manager. This is my first webdev project");
