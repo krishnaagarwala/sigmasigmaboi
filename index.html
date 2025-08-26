@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning about forms</title>
+</head>
+
+<body>
+    <h1>Form for Job Description</h1>
+    <div>
+        <!--submits form in key:value pair where name is the key and value is the value -->
+        <!-- for should match the id -->
+        <!-- br use is discouraged it will be sorted using cpp -->
+        <form action="post">
+            <div><label for="username">Enter your username: </label>
+                <input type="text" placeholder="username goes here" id="username" name="username" required autofocus>
+            </div>
+            <br>
+            <div>
+                <label for="gender">select gender :</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+            </div>
+            <br>
+            <div>
+                <label for="languages">select languages known:</label>
+                <br>
+                <input type="checkbox" name="languages" id="java" value="java">
+                <label for="java">Java</label>
+                <input type="checkbox" name="languages" id="python" value="python">
+                <label for="python">Python</label>
+                <input type="checkbox" name="languages" id="sql" value="sql">
+                <label for="sql">SQL</label>
+            </div>
+            <br>
+            <div>
+                <label for="WorkExp">Work Experience:</label>
+                <br>
+                <textarea name="WorkExp" id="WorkExp" rows="5" cols="50" placeholder="Enter Your Work Experience Here."></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="cities">Select your preferred city for work: </label>
+                <select name="cities" id="cities" autofocus>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Banglore">Banglore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+            </div>
+            <br>
+            </form>
+    </div>
+</body>
+
+</html>
